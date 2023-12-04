@@ -27,6 +27,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  z-index: 2;
 }
 
 .dropdown:hover {
@@ -62,4 +63,51 @@ li:hover {
 
 .main {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.slideshow {
+  height: 500px;
+  width: 875px;
+    position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: calc(875px * 3);
+  display: flex;
+  justify-content: space-between;
+  transition: left 2s;
+  position: relative;
+}
+
+img {
+  height: 500px;
+  width: 875px;
+  position: relative;
+}
+
+button {
+  position: absolute;
+}
+
+button#prev {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.545);
+  font-size: 30px;
+  top: 50%;
+}
+
+button#next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.545);
+  font-size: 30px;
+  right: 0;
+  top: 50%;
+}
+
+
